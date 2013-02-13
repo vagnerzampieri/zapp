@@ -1,0 +1,10 @@
+GEM
+  remote: hhtps://rubygems.org/
+  specs:
+    map (6.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  map
