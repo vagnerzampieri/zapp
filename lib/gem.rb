@@ -15,6 +15,6 @@ module Gem
   end
 
   def install gem
-    system "gem install #{gem} --local --no-ri --no-rdoc"
+    system "gem install #{gem} --no-ri --no-rdoc"
   end
 end
