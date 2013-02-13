@@ -8,6 +8,7 @@ também será adicionado uma config padrão.
 testar com rspec
 criar arquivo yml para configurar as gems
 adicionar gems no arquivo
+instalar as gems
 adicionar gems através de grupos
 adicionar gems através de versões
 criar a app conforme o usuário desejar

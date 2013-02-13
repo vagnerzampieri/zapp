@@ -1,11 +1,5 @@
-class MounDirectory
-  attr_accessor :path
-  
-  def initialize path
-    @path = path
-  end
-
-  def check_or_create
+module MountDirectory
+  def check_or_create_path
     unless File.exists?(path)
       path.split('/').each do |p|
         build_path << "/#{p}"

@@ -1,5 +1,7 @@
-app: zefa
-create_path: '/vagrant/apps'
+name: zefa
+path: '/vagrant/apps'
+test: rspec
+git: true
 
 database: 
   adapter:  postgresql

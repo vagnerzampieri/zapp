@@ -13,4 +13,4 @@ require 'fileutils'
 require 'yaml'
 require 'map'
 
-require 'mount_directory'
+require 'mount_app'
