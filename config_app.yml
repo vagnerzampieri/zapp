@@ -1,0 +1,5 @@
+app: zefa
+create_path: 'home/vagrant/apps'
+gems:
+  rails: '3.2.12'
+  rspec-rails: last
