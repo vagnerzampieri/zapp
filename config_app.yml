@@ -1,5 +1,22 @@
 app: zefa
-create_path: 'home/vagrant/apps'
+create_path: '/vagrant/apps'
+
+database: 
+  adapter:  postgresql
+  user:     postgres
+  password: postgres
+
 gems:
-  rails: '3.2.12'
-  rspec-rails: last
+  groups:
+    all:
+      rails:       
+        version: '3.2.12'
+        #path:
+        #github:
+        #tag:
+        #branch:
+      haml:
+    
+    development-test:
+      rspec-rails: 
+  
