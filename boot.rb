@@ -7,8 +7,6 @@ load_paths.each do |path|
   $:.unshift(File.join(APP_ROOT, path))
 end
 
-require 'rubygems'
-require 'bundler/setup'
 require 'fileutils'
 require 'yaml'
 require 'map'

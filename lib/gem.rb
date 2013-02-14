@@ -1,8 +1,13 @@
 module Gem
   def install_gems
-    gems.groups.all.each do |gem, values|
-      p install "#{gem}#{version(values)}"
+    Dir.chdir('/vagrant/ruby-tests/rails-apps') do
+      valid_groups.each do |group|
+        groups[group].each do |gem, values|
+          install "#{gem}#{version(values)}"
+        end if groups[group]
+      end
     end
+    gems
   end
 
   private
@@ -10,11 +15,19 @@ module Gem
     Map.new gems
   end
 
+  def groups
+    gems.groups
+  end
+
+  def valid_groups
+    %w[all development test development_test]
+  end
+
   def version gem
     " -v=#{gem['version']}" if gem
   end
 
   def install gem
-    system "gem install #{gem} --no-ri --no-rdoc"
+    system "gem install #{gem} --verbose --no-ri --no-rdoc"
   end
 end

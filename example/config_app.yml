@@ -18,7 +18,11 @@ gems:
         #tag:
         #branch:
       haml:
-    
-    development-test:
+
+    development:
+
+    test:
+
+    development_test:
       rspec-rails: 
-  
+
