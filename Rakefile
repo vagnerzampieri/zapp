@@ -10,9 +10,10 @@ task :init, :config_path do |task, params|
 
   config = Map.new(YAML.load(File.open(params[:config_path])))
   p config
-  mount_app = MountApp.new(config)
-  p mount_app
-  p mount_app.check_or_create_path
-  p mount_app.install_gems
+  app = App.new(config)
+  p app
+  p app.check_or_create_path
+  p app.install_gems
+  p app.rails
 
 end

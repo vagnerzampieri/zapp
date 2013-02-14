@@ -11,7 +11,7 @@ database:
 gems:
   groups:
     all:
-      rails:       
+      rails:
         version: '3.2.12'
         #path:
         #github:
@@ -24,5 +24,4 @@ gems:
     test:
 
     development_test:
-      rspec-rails: 
-
+      rspec-rails:

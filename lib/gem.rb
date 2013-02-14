@@ -1,6 +1,6 @@
 module Gem
   def install_gems
-    Dir.chdir('/vagrant/ruby-tests/rails-apps') do
+    Dir.chdir(path) do
       valid_groups.each do |group|
         groups[group].each do |gem, values|
           install "#{gem}#{version(values)}"
