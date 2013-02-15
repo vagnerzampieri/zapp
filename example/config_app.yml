@@ -1,5 +1,5 @@
 name: name_application
-path: '~/Projects/rails'
+path: '/home/user/Projects/rails'
 test: rspec
 git: true
 
