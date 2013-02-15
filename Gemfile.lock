@@ -1,5 +1,5 @@
 GEM
-  remote: hhtps://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     map (6.2.0)
 
