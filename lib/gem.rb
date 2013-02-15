@@ -28,6 +28,6 @@ module Gem
   end
 
   def install gem
-    system "gem install #{gem} --verbose --no-ri --no-rdoc"
+    system "gem install #{gem} --local --verbose --no-ri --no-rdoc"
   end
 end

@@ -1,2 +1,5 @@
-source 'https://rubygems.org'
+source :rubygems
+
 gem 'map'
+gem 'rspec'
+gem 'pry'
