@@ -1,9 +1,9 @@
-name: zefa
-path: '/vagrant/apps'
+name: name_application
+path: '~/Projects/rails'
 test: rspec
 git: true
 
-database: 
+database:
   adapter:  postgresql
   user:     postgres
   password: postgres
