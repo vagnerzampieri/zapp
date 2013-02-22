@@ -22,9 +22,13 @@ gems:
         #branch:
       haml:
 
+    assets:
+
     development:
 
     test:
 
     development_test:
       rspec-rails:
+
+    production:

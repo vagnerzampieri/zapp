@@ -22,9 +22,26 @@ describe App do
     expect(@app.git.gitignore).to eql ['*.swo', '*.swp']
   end
 
-  it '#database' do
-    expect(@app.database.adapter).to eql 'postgresql'
-    expect(@app.database.user).to eql 'postgres'
-    expect(@app.database.password).to eql 'postgres'
+  context '#database' do
+    it '#adapter' do
+      expect(@app.database.adapter).to eql 'postgresql'
+    end
+
+    it '#user' do
+      expect(@app.database.user).to eql 'postgres'
+    end
+
+    it '#password' do
+      expect(@app.database.password).to eql 'postgres'
+    end
+  end
+
+  context '#gems' do
+    it '#all'
+    it '#assets'
+    it '#development'
+    it '#test'
+    it '#development_test'
+    it '#production'
   end
 end

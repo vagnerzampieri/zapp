@@ -20,7 +20,7 @@ module Gem
   end
 
   def valid_groups
-    %w[all development test development_test]
+    %w[all assets development test development_test production]
   end
 
   def version gem
