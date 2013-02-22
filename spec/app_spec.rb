@@ -36,7 +36,13 @@ describe App do
     end
   end
 
-  context '#gems' do
+  describe '#gems' do
+    context '#groups' do
+      it '#all' do
+        expect(@app.gems.groups.all).not_to be_empty
+      end
+    end
+
     it '#all'
     it '#assets'
     it '#development'
