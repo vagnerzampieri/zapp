@@ -1,25 +1,9 @@
+require 'app'
 require 'spec_helper'
 
 describe App do
   before do
-    @app = App.new(
-      name: 'name_application', 
-      path: '/vagrant/apps', 
-      test: 'rspec',
-      gems: {
-        groups: {
-          all: {
-            rails: {
-              version: '3.2.12'
-            },
-            haml: {}
-          }
-        } 
-      }, 
-      database: {
-        adapter: 'postgresql'
-      }
-    )
+    @app = App.new(fixture_config_app)
   end
 
   it '#name' do
