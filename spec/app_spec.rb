@@ -17,4 +17,14 @@ describe App do
   it '#test' do
     expect(@app.test).to eql 'rspec'
   end
+
+  it '#git' do
+    expect(@app.git.gitignore).to eql ['*.swo', '*.swp']
+  end
+
+  it '#database' do
+    expect(@app.database.adapter).to eql 'postgresql'
+    expect(@app.database.user).to eql 'postgres'
+    expect(@app.database.password).to eql 'postgres'
+  end
 end

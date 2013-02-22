@@ -1,7 +1,7 @@
 module Generate
   def rails
     Dir.chdir(path) do
-      system "rails new #{name} #{database}#{without_test_unit?} --skip-gemfile --skip-bundle"
+      system "rails new #{name} #{database.adapter}#{without_test_unit?} --skip-gemfile --skip-bundle"
     end
   end
 
@@ -11,6 +11,6 @@ module Generate
   end
 
   def database
-    "-d #{database}"
+    "-d #{database.adapter}"
   end
 end
