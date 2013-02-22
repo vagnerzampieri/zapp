@@ -2,6 +2,7 @@ name: name_application
 path: '/home/vagner/Projects/rails/zapp_applications'
 test: rspec
 git: true
+gitignore: [*.swo, *.swp]
 
 database:
   adapter:  postgresql
