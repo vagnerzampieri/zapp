@@ -1,8 +1,10 @@
 name: name_application
-path: '/vagrant/apps'
+path: "/vagrant/apps"
 test: rspec
-git: true
-gitignore: ["*.swo", "*.swp"]
+git:
+  gitignore: ["*.swo", "*.swp"]
+  #repository: 'git@name_repository.com:user/name_application.git'
+  #first_commit: true
 
 database:
   adapter:  postgresql
