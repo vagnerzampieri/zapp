@@ -4,7 +4,7 @@ test: rspec
 git:
   gitignore: ["*.swo", "*.swp"]
   #repository: 'git@name_repository.com:user/name_application.git'
-  #first_commit: true
+  #first_commit: "First Commit"
 
 database:
   adapter:  postgresql
