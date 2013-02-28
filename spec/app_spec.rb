@@ -40,10 +40,10 @@ describe App do
     context '#groups' do
       it '#all' do
         expect(@app.gems.groups.all).not_to be_empty
+        expect(@app.gems.groups.all).to have_key(:rails)
       end
     end
 
-    it '#all'
     it '#assets'
     it '#development'
     it '#test'
