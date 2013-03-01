@@ -1,9 +1,9 @@
-require 'app'
+require 'zapp'
 require 'spec_helper'
 
-describe App do
+describe Zapp do
   before do
-    @app = App.new(fixture_config_app)
+    @app = Zapp.new(fixture_config_app)
   end
 
   it '#name' do

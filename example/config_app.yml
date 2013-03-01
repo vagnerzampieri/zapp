@@ -2,7 +2,7 @@ name: name_application
 
 path: "/vagrant/apps"
 
-#ruby: 
+#ruby:
   #version: "1.9.3p392"
   #manager: rbenv
   #gemset: name_application

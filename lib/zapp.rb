@@ -3,7 +3,7 @@ require 'gem'
 require 'generate'
 require 'remove'
 
-class App
+class Zapp
   attr_accessor :name, :path, :application_path, :gems, :test, :git, :rm, :database
   include MountDirectory
   include Gem

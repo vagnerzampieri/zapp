@@ -11,4 +11,4 @@ require 'fileutils'
 require 'yaml'
 require 'map'
 
-require 'app'
+require 'zapp'

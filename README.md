@@ -1,11 +1,11 @@
 zapp
 ====
 
-App to create others applications in Rails 
+App to create others applications in Rails
 
-Através de um arquivo de configuração em yml, será adicionado 
+Através de um arquivo de configuração em yml, será adicionado
 todas as gems necessárias para a criação de uma app, caso
-essas gems precisem de alguma configuração específica para ela funcionar, 
+essas gems precisem de alguma configuração específica para ela funcionar,
 também será adicionado uma config padrão.
 
 testar com rspec
@@ -33,10 +33,10 @@ deploy no heroku?
 Dependências:
 
 ruby 1.9.3
-gems 
+gems
 
 map
-  
+
 Para funcionar:
 
-rake init['path/to/zapp/example/config_app.yml']
+rake zapp['path/to/zapp/example/config_app.yml']
