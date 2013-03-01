@@ -1,10 +1,20 @@
 name: name_application
+
 path: "/vagrant/apps"
+
+#ruby: 
+  #version: "1.9.3p392"
+  #manager: rbenv
+  #gemset: name_application
+
 test: rspec
+
 git:
   gitignore: ["*.swo", "*.swp"]
   #repository: 'git@name_repository.com:user/name_application.git'
   #first_commit: "First Commit"
+
+rm: ["doc/", "lib/", "vendor/"] #["README.rdoc"]
 
 database:
   adapter:  postgresql
