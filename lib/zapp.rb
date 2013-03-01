@@ -13,7 +13,7 @@ class Zapp
   def initialize args = {}
     @name             = args[:name]
     @path             = args[:path]
-    @application_path = "#{args[:path]}/#{args[:name]}"
+    @application_path = File.join args[:path], args[:name]
     @test             = args[:test]
     @git              = args[:git]
     @rm               = args[:rm]
