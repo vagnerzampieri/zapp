@@ -5,7 +5,7 @@ def fixture_config_app
     YAML.load(
       File.open(
         File.join(
-          "#{Dir.pwd}", "example", "config_app.yml"
+          Dir.pwd, "example", "config_app.yml"
         )
       )
     )
