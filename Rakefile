@@ -14,6 +14,7 @@ task :init, :config_path do |task, params|
   p app
   p app.check_or_create_path
   p app.install_gems
-  p app.rails
+  p app.rails_new
+  p app.destroy_files
 
 end
