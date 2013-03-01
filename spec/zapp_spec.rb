@@ -7,11 +7,18 @@ describe Zapp do
   end
 
   it '#name' do
-    expect(@app.name).to eql 'name_application'
+    #expect(@app.name).to eql 'name_application'
+    expect(@app.name).to eql 'name_applications'
   end
 
   it '#path' do
-    expect(@app.path).to eql '/vagrant/apps'
+    #expect(@app.path).to eql '/vagrant/apps'
+    expect(@app.path).to eql "/home/vagner/Projects/rails/zapp_applications"
+  end
+
+  it '#application_path' do
+    #expect(@app.application_path).to eql '/vagrant/apps/name_application'
+    expect(@app.application_path).to eql "/home/vagner/Projects/rails/zapp_applications/name_applications"
   end
 
   it '#test' do
@@ -19,7 +26,11 @@ describe Zapp do
   end
 
   it '#git' do
-    expect(@app.git.gitignore).to eql ['*.swo', '*.swp']
+    expect(@app.git.gitignore).to have(2).items
+  end
+
+  it '#rm' do
+    expect(@app.rm).to have(4).items
   end
 
   context '#database' do
