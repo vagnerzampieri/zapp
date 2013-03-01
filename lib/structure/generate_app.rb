@@ -8,14 +8,14 @@ module Structure
 
     private
     def create_application
-      new = "rails new #{name} #{database.adapter}"
+      new = "rails new #{name} #{database!}"
       new << skip_gemfile!
       new << skip_test_unit?
       new << skip_git?
-      new
+      p new
     end
 
-    def database
+    def database!
       "-d #{database.adapter}"
     end
 
