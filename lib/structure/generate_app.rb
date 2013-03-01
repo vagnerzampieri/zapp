@@ -13,7 +13,7 @@ module Structure
       new << skip_gemfile!
       new << skip_test_unit?
       new << skip_git?
-      p new
+      new
     end
 
     def database!
