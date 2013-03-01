@@ -1,6 +1,8 @@
-name: name_application
+#name: name_application
+name: name_applications
 
-path: "/vagrant/apps"
+#path: "/vagrant/apps"
+path: "/home/vagner/Projects/rails/zapp_applications"
 
 #ruby:
   #version: "1.9.3p392"
@@ -14,7 +16,7 @@ git:
   #repository: 'git@name_repository.com:user/name_application.git'
   #first_commit: "First Commit"
 
-rm: ["doc/", "lib/", "vendor/"] #["README.rdoc"]
+rm: ["doc/", "lib/", "vendor/", "public/index.html"]
 
 database:
   adapter:  postgresql

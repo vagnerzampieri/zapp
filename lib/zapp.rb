@@ -1,14 +1,14 @@
-require 'mount_directory'
+require 'structure/directory'
+require 'structure/generate_app'
+require 'structure/remove'
 require 'gem'
-require 'generate'
-require 'remove'
 
 class Zapp
   attr_accessor :name, :path, :application_path, :gems, :test, :git, :rm, :database
-  include MountDirectory
+  include Structure::Directory
+  include Structure::GenerateApp
+  include Structure::Remove
   include Gem
-  include Generate
-  include Remove
 
   def initialize args = {}
     @name             = args[:name]
