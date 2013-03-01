@@ -11,10 +11,6 @@ module Gem
   end
 
   private
-  def gems
-    Map.new gems
-  end
-
   def groups
     gems.groups
   end
