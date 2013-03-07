@@ -1,8 +1,8 @@
-#name: name_application
-name: name_applications
+name: name_application
+#name: name_applications
 
-#path: "/vagrant/apps"
-path: "/home/vagner/Projects/rails/zapp_applications"
+path: "/vagrant/apps"
+#path: "/home/vagner/Projects/rails/zapp_applications"
 
 #ruby:
   #version: "1.9.3p392"

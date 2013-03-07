@@ -1,5 +1,7 @@
 source :rubygems
 
 gem 'map'
-gem 'rspec'
+gem 'activemodel'
 gem 'pry'
+gem 'rspec'
+gem 'shoulda-matchers'

@@ -1,4 +1,5 @@
 require File.expand_path(File.join("..", "..", "boot"), __FILE__)
+require 'shoulda-matchers'
 
 def fixture_config_app
   Map.new(
